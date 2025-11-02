@@ -1,0 +1,14 @@
+# Banner Images
+This folder contains banner/carousel images for the hero section.
+
+Recommended specifications:
+- Resolution: 1920x800px (2.4:1 aspect ratio)
+- Format: JPG or WebP
+- File size: Max 500KB per image
+- Quality: High (80-90%)
+
+File naming convention:
+- banner-01-photography.jpg
+- banner-02-wedding.jpg
+- banner-03-portrait.jpg
+- banner-04-event.jpg

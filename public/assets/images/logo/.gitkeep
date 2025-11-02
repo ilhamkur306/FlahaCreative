@@ -1,0 +1,13 @@
+# Logo Assets
+This folder contains logo files for Flaha Creative.
+
+Recommended formats:
+- SVG (vector, scalable)
+- PNG (with transparent background)
+- JPG (for specific use cases)
+
+File naming convention:
+- logo-main.svg
+- logo-white.svg
+- logo-dark.svg
+- logo-icon.svg

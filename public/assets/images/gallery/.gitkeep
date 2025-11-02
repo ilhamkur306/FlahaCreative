@@ -1,0 +1,20 @@
+# Gallery Images
+This folder contains portfolio and gallery images.
+
+Recommended specifications:
+- Resolution: Various sizes (maintain aspect ratio)
+- Format: JPG or WebP
+- File size: Max 300KB per image
+- Quality: High (80-90%)
+
+Folder structure:
+- portrait/ (portrait photography)
+- wedding/ (wedding photography)
+- event/ (event photography)
+- commercial/ (commercial photography)
+
+File naming convention:
+- portrait-001.jpg
+- wedding-ceremony-001.jpg
+- event-corporate-001.jpg
+- commercial-product-001.jpg

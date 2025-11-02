@@ -1,0 +1,14 @@
+# Custom Fonts
+This folder contains custom font files if needed.
+
+Recommended formats:
+- WOFF2 (modern browsers)
+- WOFF (fallback)
+- TTF (fallback)
+
+File naming convention:
+- font-name-regular.woff2
+- font-name-bold.woff2
+- font-name-italic.woff2
+
+Note: Consider using Google Fonts or system fonts for better performance.

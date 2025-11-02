@@ -1,0 +1,15 @@
+# Icons and SVG Assets
+This folder contains icons and SVG files.
+
+Recommended specifications:
+- Format: SVG (preferred) or PNG
+- Size: Various (16x16, 24x24, 32x32, 48x48)
+- Style: Consistent with brand guidelines
+
+File naming convention:
+- icon-camera.svg
+- icon-phone.svg
+- icon-email.svg
+- icon-location.svg
+- icon-social-instagram.svg
+- icon-social-facebook.svg
