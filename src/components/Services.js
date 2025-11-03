@@ -43,10 +43,10 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 w-full">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
             <span className="block text-[#103641]"> Layanan Kami</span>
           </h2>
-          <div className="w-24 h-1 bg-[#103641] mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-[#103641] mx-auto mb-4"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Kami menawarkan berbagai layanan fotografi yang disesuaikan dengan kebutuhan dan budget Anda
           </p>
