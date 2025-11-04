@@ -3,7 +3,7 @@ export default function Benefits() {
     {
       id: 1,
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
@@ -13,7 +13,7 @@ export default function Benefits() {
     {
       id: 2,
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
@@ -23,7 +23,7 @@ export default function Benefits() {
     {
       id: 3,
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
       ),
@@ -33,7 +33,7 @@ export default function Benefits() {
     {
       id: 4,
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
@@ -43,7 +43,7 @@ export default function Benefits() {
     {
       id: 5,
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
       ),
@@ -53,7 +53,7 @@ export default function Benefits() {
     {
       id: 6,
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       ),
@@ -63,56 +63,56 @@ export default function Benefits() {
   ];
 
   return (
-<section id="benefits" className="h-[90vh] scroll-mt-[10vh] flex items-center bg-[#EAEAEA] overflow-hidden">
+    <section id="benefits" className="min-h-[90vh] scroll-mt-[10vh] flex items-center bg-[#EAEAEA] py-8 lg:py-0">
       <div className="max-w-6xl mx-auto px-4 w-full">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        {/* Header - Mobile Optimized */}
+        <div className="text-center mb-6 lg:mb-8">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 lg:mb-6 leading-tight">
             Mengapa Memilih
             <span className="block text-[#103641]">Flaha Creative Production?</span>
           </h2>
-          <div className="w-20 h-1 bg-[#103641] mx-auto mb-4"></div>
-          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <div className="w-16 lg:w-20 h-1 bg-[#103641] mx-auto mb-2 lg:mb-4"></div>
+          <p className="text-xs sm:text-sm lg:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
             Kami memberikan nilai lebih dalam setiap layanan fotografi dengan keunggulan yang membedakan kami dari yang lain
           </p>
         </div>
 
-        {/* Benefits Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+        {/* Benefits Grid - Mobile Optimized */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 mb-4 lg:mb-6">
           {benefits.map((benefit) => (
             <div 
               key={benefit.id} 
-              className="group bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100 text-center"
+              className="group bg-white p-3 sm:p-4 lg:p-4 rounded-lg lg:rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100 text-center"
             >
               {/* Icon */}
-              <div className="text-[#103641] mb-3 group-hover:scale-110 transition-transform duration-300 flex justify-center">
+              <div className="text-[#103641] mb-2 lg:mb-3 group-hover:scale-110 transition-transform duration-300 flex justify-center">
                 {benefit.icon}
               </div>
               
               {/* Title */}
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#103641] transition-colors duration-300">
+              <h3 className="text-sm sm:text-base lg:text-lg font-bold text-gray-900 mb-1 lg:mb-2 group-hover:text-[#103641] transition-colors duration-300">
                 {benefit.title}
               </h3>
               
               {/* Description */}
-              <p className="text-gray-600 leading-relaxed text-xs">
+              <p className="text-gray-600 leading-relaxed text-xs lg:text-xs">
                 {benefit.description}
               </p>
             </div>
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-6">
-          <p className="text-sm text-gray-600 mb-3">
+        {/* Bottom CTA - Mobile Optimized */}
+        <div className="text-center mt-4 lg:mt-6">
+          <p className="text-xs sm:text-sm text-gray-600 mb-2 lg:mb-3 px-4">
             Siap untuk mengabadikan momen berharga Anda?
           </p>
           <a 
             href="#contact" 
-            className="inline-flex items-center px-6 py-2.5 bg-[#103641] text-white font-semibold rounded-full hover:bg-[#0d2d36] transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg text-sm"
+            className="inline-flex items-center px-4 py-2 lg:px-6 lg:py-2.5 bg-[#103641] text-white font-semibold rounded-full hover:bg-[#0d2d36] transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg text-xs sm:text-sm"
           >
             Konsultasi Gratis
-            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-3 h-3 lg:w-4 lg:h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>

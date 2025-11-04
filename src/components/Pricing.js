@@ -60,58 +60,58 @@ export default function Pricing() {
   ]
 
   return (
-<section id="pricing" className="h-[90vh] scroll-mt-[10vh] flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white py-6">
+    <section id="pricing" className="min-h-[90vh] scroll-mt-[10vh] flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white py-8 lg:py-6">
       <div className="max-w-6xl mx-auto px-4 w-full">
-        {/* Header Section */}
-        <div className="text-center mb-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        {/* Header Section - Mobile Optimized */}
+        <div className="text-center mb-6 lg:mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 lg:mb-6 leading-tight">
             <span className="block text-[#103641]">Paket Harga</span>
           </h2>
-          <div className="w-20 h-1 bg-[#103641] mx-auto mb-4"></div>
-          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <div className="w-16 lg:w-20 h-1 bg-[#103641] mx-auto mb-3 lg:mb-4"></div>
+          <p className="text-xs sm:text-sm lg:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
             Pilih paket yang sesuai dengan kebutuhan dan budget Anda. Semua paket sudah termasuk konsultasi gratis.
           </p>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mb-6">
+        {/* Pricing Cards - Mobile Optimized */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 mb-4 lg:mb-6">
           {pricingPlans.map((plan) => (
-            <div key={plan.id} className={`relative group ${plan.popular ? 'transform scale-102 lg:scale-105' : ''}`}>
-              {/* Popular Badge */}
+            <div key={plan.id} className={`relative group ${plan.popular ? 'transform scale-100 sm:scale-102 lg:scale-105' : ''}`}>
+              {/* Popular Badge - Mobile Optimized */}
               {plan.popular && (
                 <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 z-10">
-                  <span className="bg-gradient-to-r from-[#103641] to-[#1a5a6b] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                  <span className="bg-gradient-to-r from-[#103641] to-[#1a5a6b] text-white px-2 py-0.5 lg:px-3 lg:py-1 rounded-full text-[10px] lg:text-xs font-bold shadow-lg">
                     PALING POPULER
                   </span>
                 </div>
               )}
 
-              <div className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full border-2 ${plan.popular ? 'border-[#103641]' : 'border-gray-100'}`}>
-                {/* Header */}
-                <div className={`bg-gradient-to-r ${plan.color} text-white p-4 rounded-t-xl`}>
-                  <h3 className="text-lg font-bold mb-2">{plan.name}</h3>
-                  <div className="mb-2">
-                    <span className="text-xl md:text-2xl font-bold">{plan.price}</span>
-                    <span className="text-xs opacity-80">/{plan.duration}</span>
+              <div className={`bg-white rounded-lg lg:rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full border-2 ${plan.popular ? 'border-[#103641]' : 'border-gray-100'}`}>
+                {/* Header - Mobile Optimized */}
+                <div className={`bg-gradient-to-r ${plan.color} text-white p-3 lg:p-4 rounded-t-lg lg:rounded-t-xl`}>
+                  <h3 className="text-base lg:text-lg font-bold mb-1 lg:mb-2">{plan.name}</h3>
+                  <div className="mb-1 lg:mb-2">
+                    <span className="text-lg sm:text-xl lg:text-2xl font-bold">{plan.price}</span>
+                    <span className="text-[10px] lg:text-xs opacity-80">/{plan.duration}</span>
                   </div>
-                  <p className="text-xs opacity-90">{plan.description}</p>
+                  <p className="text-[10px] lg:text-xs opacity-90">{plan.description}</p>
                 </div>
 
-                {/* Features */}
-                <div className="p-4">
-                  <ul className="space-y-1.5 mb-4">
+                {/* Features - Mobile Optimized */}
+                <div className="p-3 lg:p-4">
+                  <ul className="space-y-1 lg:space-y-1.5 mb-3 lg:mb-4">
                     {plan.features.map((feature, index) => (
                       <li key={index} className="flex items-center">
-                        <svg className="w-3.5 h-3.5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-3 h-3 lg:w-3.5 lg:h-3.5 text-green-500 mr-1.5 lg:mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        <span className="text-xs text-gray-700">{feature}</span>
+                        <span className="text-[11px] lg:text-xs text-gray-700">{feature}</span>
                       </li>
                     ))}
                   </ul>
 
-                  {/* CTA Button */}
-                  <button className={`w-full py-2.5 px-4 rounded-lg font-bold text-xs transition-all duration-300 transform hover:scale-105 ${
+                  {/* CTA Button - Mobile Optimized */}
+                  <button className={`w-full py-2 lg:py-2.5 px-3 lg:px-4 rounded-lg font-bold text-[11px] lg:text-xs transition-all duration-300 transform hover:scale-105 ${
                     plan.popular 
                       ? 'bg-gradient-to-r from-[#103641] to-[#1a5a6b] text-white hover:from-[#0d2d36] hover:to-[#154d5c] shadow-lg' 
                       : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
@@ -124,12 +124,12 @@ export default function Pricing() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        {/* Bottom CTA - Mobile Optimized */}
         <div className="text-center">
-          <p className="text-gray-600 mb-3 text-xs">
+          <p className="text-gray-600 mb-2 lg:mb-3 text-[11px] sm:text-xs px-4">
             Butuh paket khusus? Hubungi kami untuk konsultasi gratis dan penawaran yang disesuaikan dengan kebutuhan Anda.
           </p>
-          <button className="bg-gradient-to-r from-[#103641] to-[#1a5a6b] text-white px-5 py-2.5 rounded-lg font-semibold text-xs hover:from-[#0d2d36] hover:to-[#154d5c] transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <button className="bg-gradient-to-r from-[#103641] to-[#1a5a6b] text-white px-4 py-2 lg:px-5 lg:py-2.5 rounded-lg font-semibold text-[11px] sm:text-xs hover:from-[#0d2d36] hover:to-[#154d5c] transition-all duration-300 transform hover:scale-105 shadow-lg">
             Konsultasi Gratis
           </button>
         </div>

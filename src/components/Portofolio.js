@@ -296,25 +296,25 @@ export default function Portofolio() {
   const filteredItems = getFilteredItems()
 
   return (
-    <section id="portfolio" className="h-[90vh] scroll-mt-[10vh] flex items-center bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 w-full h-full py-6">
-        {/* Header Section */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+    <section id="portfolio" className="min-h-[90vh] scroll-mt-[10vh] flex items-center bg-gray-50 py-6 lg:py-8">
+      <div className="max-w-7xl mx-auto px-4 w-full h-full">
+        {/* Header Section - Mobile Optimized */}
+        <div className="text-center mb-6 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 lg:mb-4 leading-tight">
             <span className="block text-[#103641]">Portfolio Kami</span>
           </h2>
-          <div className="w-24 h-1 bg-[#103641] mx-auto mb-4"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-16 lg:w-24 h-1 bg-[#103641] mx-auto mb-3 lg:mb-4"></div>
+          <p className="text-xs sm:text-sm lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Lihat koleksi karya terbaik kami yang menampilkan berbagai momen berharga
           </p>
 
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mt-4">
+          {/* Category Filter - Mobile Optimized */}
+          <div className="flex flex-wrap justify-center gap-2 lg:gap-4 mt-3 lg:mt-4">
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setActiveFilter(category.id)}
-                className={`px-4 py-2 rounded-full border-2 border-teal-800 font-semibold transition-all duration-300 transform hover:scale-105 text-x ${
+                className={`px-3 py-1.5 lg:px-4 lg:py-2 rounded-full border-2 border-teal-800 font-semibold transition-all duration-300 transform hover:scale-105 text-[11px] sm:text-xs lg:text-base ${
                   activeFilter === category.id 
                     ? 'bg-teal-800 text-white' 
                     : 'text-teal-800 hover:bg-teal-800 hover:text-white'
@@ -326,8 +326,8 @@ export default function Portofolio() {
           </div>
         </div>
 
-        {/* Content Section - Conditional Rendering */}
-        <div className="mb-10 h-[50vh] overflow-hidden">
+        {/* Content Section - Mobile Optimized */}
+        <div className="mb-6 lg:mb-10 h-[40vh] sm:h-[45vh] lg:h-[50vh]">
           {activeFilter === 'all' ? (
             // Swiper Slider for "Semua" category
             <div className="w-full h-full relative">
@@ -338,35 +338,26 @@ export default function Portofolio() {
                 navigation
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
-                className="w-full h-full rounded-xl overflow-hidden"
+                className="w-full h-full rounded-lg lg:rounded-xl overflow-hidden"
               >
                 {sliderImages.map((slide) => (
                   <SwiperSlide key={slide.id}>
                     <div className="relative w-full h-full">
                       {/* Fallback for Image component in development */}
                       <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-300 flex items-center justify-center">
-                        <div className="text-center text-gray-500">
-                          <svg className="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div className="text-center text-gray-500 px-4">
+                          <svg className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 mx-auto mb-2 lg:mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                           </svg>
-                          <p className="text-lg font-medium">{slide.title}</p>
+                          <p className="text-sm lg:text-lg font-medium">{slide.title}</p>
                         </div>
                       </div>
                       
-                      {/* Uncomment when images are available */}
-                      {/* <Image 
-                        src={slide.image}
-                        alt={slide.title}
-                        fill
-                        style={{ objectFit: 'cover' }}
-                        priority
-                      /> */}
-                      
-                      {/* Overlay with text */}
+                      {/* Overlay with text - Mobile Optimized */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                        <div className="p-6 text-white w-full">
-                          <h3 className="text-2xl font-bold mb-2">{slide.title}</h3>
-                          <p className="text-sm mb-2 opacity-90">{slide.description}</p>
+                        <div className="p-3 sm:p-4 lg:p-6 text-white w-full">
+                          <h3 className="text-base sm:text-lg lg:text-2xl font-bold mb-1 lg:mb-2">{slide.title}</h3>
+                          <p className="text-xs sm:text-sm opacity-90">{slide.description}</p>
                         </div>
                       </div>
                     </div>
@@ -375,33 +366,24 @@ export default function Portofolio() {
               </Swiper>
             </div>
           ) : (
-            // Grid Gallery for other categories
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-full">
+            // Grid Gallery for other categories - Mobile Optimized
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 lg:gap-4 h-full overflow-y-auto">
               {filteredItems.slice(0, 6).map((item) => (
                 <div 
                   key={item.id} 
-                  className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
+                  className="group relative overflow-hidden rounded-lg lg:rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]"
                 >
                   {/* Image Container */}
                   <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 relative overflow-hidden">
                     {/* Fallback for Image component in development */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center text-gray-500">
-                        <svg className="w-12 h-12 mx-auto mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="text-center text-gray-500 px-2">
+                        <svg className="w-8 h-8 lg:w-12 lg:h-12 mx-auto mb-1 lg:mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
-                        <p className="text-xs font-medium">{item.category}</p>
+                        <p className="text-[10px] lg:text-xs font-medium">{item.category}</p>
                       </div>
                     </div>
-                    
-                    {/* Uncomment when images are available */}
-                    {/* <Image 
-                      src={item.image}
-                      alt={item.title}
-                      fill
-                      style={{ objectFit: 'cover' }}
-                    /> */}
-                    
                   </div>
                 </div>
               ))}
@@ -409,9 +391,9 @@ export default function Portofolio() {
           )}
         </div>
 
-        {/* View More Button */}
-        <div className="text-center mt-4">
-          <button className="bg-gradient-to-r from-teal-700 to-teal-900 text-white px-5 py-2 rounded-lg font-semibold hover:from-teal-800 hover:to-teal-950 transition-all duration-300 transform hover:scale-105 shadow-lg text-xl">
+        {/* View More Button - Mobile Optimized */}
+        <div className="text-center mt-4 lg:mt-6">
+          <button className="bg-gradient-to-r from-teal-700 to-teal-900 text-white px-4 py-2 lg:px-5 lg:py-2 rounded-lg font-semibold text-xs sm:text-sm lg:text-xl hover:from-teal-800 hover:to-teal-950 transition-all duration-300 transform hover:scale-105 shadow-lg">
             Lihat Portfolio Lengkap
           </button>
         </div>
