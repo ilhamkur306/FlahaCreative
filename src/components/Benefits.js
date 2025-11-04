@@ -63,7 +63,7 @@ export default function Benefits() {
   ];
 
   return (
-    <section id="benefits" className="h-[90vh] flex items-center bg-[#EAEAEA] overflow-hidden">
+<section id="benefits" className="h-[90vh] scroll-mt-[10vh] flex items-center bg-[#EAEAEA] overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 w-full">
         {/* Header */}
         <div className="text-center mb-8">

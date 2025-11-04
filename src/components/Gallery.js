@@ -136,7 +136,7 @@ export default function Gallery() {
     : galleryItems.filter(item => item.category === activeFilter)
 
   return (
-    <section id="gallery" className="h-[90vh] flex items-center bg-gray-50 py-4">
+<section id="gallery" className="h-[90vh] scroll-mt-[10vh] flex items-center bg-gray-50 py-4">
       <div className="max-w-7xl mx-auto px-4 w-full h-full flex flex-col">
         {/* Header Section */}
         <div className="text-center mb-4">

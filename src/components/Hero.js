@@ -55,7 +55,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="hero" className="relative h-[90vh] overflow-hidden mt-[10vh]">
+<section id="hero" className="relative h-[90vh] scroll-mt-[10vh] overflow-hidden mt-[10vh]">
       <div className="absolute inset-0 bg-gradient-to-br from-[#103641] via-[#2d7a8a] to-[#1a5a6b]"></div>
       <div className="w-full h-full flex flex-col relative z-10">
       {/* Section 1: Title and Description - 50% of remaining viewport */}

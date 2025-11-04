@@ -9,7 +9,7 @@ export default function Header() {
   const menuItems = [
     { name: 'Beranda', href: '#hero' },
     { name: 'Layanan', href: '#services' },
-    { name: 'Galeri', href: '#gallery' },
+    { name: 'Portofolio', href: '#portfolio' },
     { name: 'Daftar Harga', href: '#pricing' },
     { name: 'Tentang Kami', href: '#about' },
     { name: 'Kontak', href: '#contact' }

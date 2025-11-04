@@ -39,7 +39,7 @@ export default function Services() {
   ]
 
   return (
-    <section id="services" className="h-[90vh] flex items-center bg-[#EAEAEA]">
+<section id="services" className="h-[90vh] scroll-mt-[10vh] flex items-center bg-[#EAEAEA]">
       <div className="max-w-7xl mx-auto px-4 w-full">
         {/* Header Section */}
         <div className="text-center mb-16">

@@ -115,7 +115,7 @@ Kami akan segera merespons konsultasi Anda.`
   ]
 
   return (
-    <section id="contact" className="h-[85vh] py-4 bg-gradient-to-br from-[#103641] to-[#1a5a6b] flex flex-col justify-center overflow-hidden">
+<section id="contact" className="h-[85vh] scroll-mt-[10vh] py-4 bg-gradient-to-br from-[#103641] to-[#1a5a6b] flex flex-col justify-center overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 w-full h-full flex items-center">
         <div className="grid lg:grid-cols-2 gap-8 items-start w-full">
           {/* Left Side - Contact Info */}
