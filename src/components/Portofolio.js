@@ -296,7 +296,7 @@ export default function Portofolio() {
   const filteredItems = getFilteredItems()
 
   return (
-    <section id="portfolio" className="min-h-[90vh] scroll-mt-[10vh] flex items-center bg-gray-50 py-6 lg:py-8">
+    <section id="portfolio" className="min-h-[92vh] scroll-mt-[8vh] flex items-center bg-gray-50 py-6 lg:py-8">
       <div className="max-w-7xl mx-auto px-4 w-full h-full">
         {/* Header Section - Mobile Optimized */}
         <div className="text-center mb-6 lg:mb-16">
@@ -355,7 +355,7 @@ export default function Portofolio() {
                       
                       {/* Overlay with text - Mobile Optimized */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                        <div className="p-3 sm:p-4 lg:p-6 text-white w-full">
+                        <div className="p-3 sm:p-4 lg:p-6 text-white w-full mb-8 sm:mb-10">
                           <h3 className="text-base sm:text-lg lg:text-2xl font-bold mb-1 lg:mb-2">{slide.title}</h3>
                           <p className="text-xs sm:text-sm opacity-90">{slide.description}</p>
                         </div>
@@ -364,6 +364,51 @@ export default function Portofolio() {
                   </SwiperSlide>
                 ))}
               </Swiper>
+              
+              {/* Custom Pagination Styling */}
+              <style jsx>{`
+                :global(.swiper-horizontal > .swiper-pagination-bullets),
+                :global(.swiper-pagination-bullets) {
+                  position: absolute;
+                  left: 0;
+                  width: 100%;
+                  bottom: 16px !important;
+                  display: flex !important;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 6px;
+                  z-index: 20; /* di atas overlay teks */
+                }
+
+                :global(.swiper-pagination-bullet) {
+                  width: 8px;
+                  height: 8px;
+                  border-radius: 9999px;
+                  background: rgba(255, 255, 255, 0.7);
+                  border: 1px solid rgba(255, 255, 255, 0.9);
+                  opacity: 1;
+                  flex: 0 0 auto;
+                }
+
+                :global(.swiper-pagination-bullet-active) {
+                  background: #103641;
+                  border-color: #103641;
+                  opacity: 1;
+                }
+
+                @media (min-width: 640px) {
+                  :global(.swiper-horizontal > .swiper-pagination-bullets),
+                  :global(.swiper-pagination-bullets) {
+                    bottom: 20px !important;
+                    gap: 8px;
+                  }
+                  
+                  :global(.swiper-pagination-bullet) {
+                    width: 10px;
+                    height: 10px;
+                  }
+                }
+              `}</style>
             </div>
           ) : (
             // Grid Gallery for other categories - Mobile Optimized

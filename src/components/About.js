@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="min-h-[90vh] scroll-mt-[10vh] flex items-center bg-[#EAEAEA] py-8 lg:py-0">
+    <section id="about" className="min-h-[92vh] scroll-mt-[10vh] flex items-center bg-[#EAEAEA] py-8 lg:py-0">
       <div className="max-w-7xl mx-auto px-4 w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Kolom Kiri: Konten Utama */}

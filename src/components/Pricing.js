@@ -60,7 +60,7 @@ export default function Pricing() {
   ]
 
   return (
-    <section id="pricing" className="min-h-[90vh] scroll-mt-[10vh] flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white py-8 lg:py-6">
+    <section id="pricing" className="min-h-[92vh] scroll-mt-[8vh] flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white py-8 lg:py-6">
       <div className="max-w-6xl mx-auto px-4 w-full">
         {/* Header Section - Mobile Optimized */}
         <div className="text-center mb-6 lg:mb-6">

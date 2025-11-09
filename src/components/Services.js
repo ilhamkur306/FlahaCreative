@@ -39,7 +39,7 @@ export default function Services() {
   ]
 
   return (
-    <section id="services" className="min-h-[90vh] scroll-mt-[10vh] flex items-center bg-[#EAEAEA] py-8 lg:py-0">
+    <section id="services" className="min-h-[92vh] scroll-mt-[8vh] flex items-center bg-[#EAEAEA] py-8 lg:py-0">
       <div className="max-w-7xl mx-auto px-4 w-full">
         {/* Header Section - Mobile Optimized */}
         <div className="text-center mb-8 lg:mb-16">
