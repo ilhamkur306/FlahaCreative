@@ -38,18 +38,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Specialties - Mobile Optimized */}
-            <div className="flex flex-wrap gap-2 lg:gap-3">
-              <div className="bg-white px-3 py-2 lg:px-6 lg:py-3 rounded-full shadow-sm border border-gray-200">
-                <span className="text-xs sm:text-sm lg:text-base text-gray-700 font-medium">Fotografi Portrait</span>
-              </div>
-              <div className="bg-white px-3 py-2 lg:px-6 lg:py-3 rounded-full shadow-sm border border-gray-200">
-                <span className="text-xs sm:text-sm lg:text-base text-gray-700 font-medium">Fotografi Pernikahan</span>
-              </div>
-              <div className="bg-white px-3 py-2 lg:px-6 lg:py-3 rounded-full shadow-sm border border-gray-200">
-                <span className="text-xs sm:text-sm lg:text-base text-gray-700 font-medium">Fotografi Event</span>
-              </div>
-            </div>
           </div>
 
           {/* Kolom Kanan: Visual - Mobile Optimized */}

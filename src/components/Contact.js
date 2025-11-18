@@ -110,13 +110,13 @@ Kami akan segera merespons konsultasi Anda.`
               Mari
               <span className="block text-white/90">Berkolaborasi</span>
             </h2>
-            <div className="w-20 h-1 bg-white/80 mb-6 sm:mb-8"></div>
-            <p className="text-base sm:text-lg text-white/90 leading-relaxed mb-8 sm:mb-10">
+            <div className="w-20 h-1 bg-white/80 mb-6 sm:mb-6"></div>
+            <p className="text-base sm:text-lg text-white/90 leading-relaxed sm:mb-6">
               Siap untuk mengabadikan momen berharga Anda? Hubungi kami sekarang untuk konsultasi gratis dan dapatkan penawaran terbaik.
             </p>
 
             {/* Contact Information */}
-            <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+            <div className="space-y-3 sm:space-y-4 sm:mb-6">
               {contactInfo.map((contact, index) => (
                 <div key={index} className="flex items-start space-x-3 sm:space-x-4">
                   <div className="bg-white/20 p-2 sm:p-3 rounded-lg text-white flex-shrink-0 text-lg sm:text-xl">
@@ -124,7 +124,7 @@ Kami akan segera merespons konsultasi Anda.`
                   </div>
                   <div>
                     <h3 className="text-sm sm:text-base font-semibold mb-1 text-white">{contact.title}</h3>
-                    <p className="text-sm sm:text-base font-bold mb-1 text-white">{contact.info}</p>
+                    <p className="text-sm sm:text-base font-bold mb-1.5 text-white">{contact.info}</p>
                     <p className="text-white/80 text-xs sm:text-sm">{contact.description}</p>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ Kami akan segera merespons konsultasi Anda.`
 
             {/* Social Media */}
             <div>
-              <h3 className="text-sm sm:text-base font-semibold mb-3 sm:mb-4 text-white">Ikuti Kami</h3>
+              <h3 className="text-sm sm:text-base font-semibold sm:mb-4 text-white">Ikuti Kami</h3>
               <div className="flex space-x-3 sm:space-x-4">
                 {socialMedia.map((social, index) => (
                   <a
@@ -216,7 +216,7 @@ Kami akan segera merespons konsultasi Anda.`
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={2}
-                  className="w-full px-4 py-8 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent resize-none text-base"
+                  className="w-full  px-4 py-2 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent resize-none text-base"
                   placeholder="Tambahkan pesan atau detail tambahan..."
                 ></textarea>
               </div>
