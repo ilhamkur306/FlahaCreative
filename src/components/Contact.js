@@ -27,20 +27,13 @@ export default function Contact() {
       return
     }
 
-    const message = `*Konsultasi Fotografi - Flaha Creative*
+    const message = `Halo Flaha Creative Production, saya ingin konsultasi.
 
-*Informasi Pemesanan:*
-👤 Nama: ${formData.name}
-🎯 Jenis Layanan: ${formData.eventType}
-📍 Lokasi: ${formData.location}
-📅 Tanggal Pemesanan: ${formData.eventDate || 'Belum ditentukan'}
-
-*Pesan Tambahan:*
-💬 ${formData.message || 'Tidak ada pesan tambahan'}
-
----
-Terima kasih telah menghubungi Flaha Creative! 📸✨
-Kami akan segera merespons konsultasi Anda.`
+Nama: ${formData.name}
+Layanan: ${formData.eventType}
+Tanggal: ${formData.eventDate || 'Belum ditentukan'}
+Lokasi: ${formData.location}
+Pesan: ${formData.message || '-'}`
 
     const encodedMessage = encodeURIComponent(message)
     const whatsappNumber = '6288808017869'
@@ -62,13 +55,13 @@ Kami akan segera merespons konsultasi Anda.`
   const contactInfo = [
     {
       icon: '📍',
-      title: 'Alamat',
-      info: 'Jl. Kreatif No. 123',
-      description: 'Jakarta Selatan, 12345'
+      title: 'Area Layanan',
+      info: 'Jabodetabek dan sekitarnya',
+      description: 'Bisa diskusi untuk luar kota sesuai kebutuhan'
     },
     {
       icon: '📞',
-      title: 'Telepon',
+      title: 'WhatsApp',
       info: '+62 888-0801-7869',
       description: 'Senin - Sabtu: 09:00 - 18:00'
     },
@@ -112,7 +105,7 @@ Kami akan segera merespons konsultasi Anda.`
             </h2>
             <div className="w-20 h-1 bg-white/80 mb-6 sm:mb-6"></div>
             <p className="text-base sm:text-lg text-white/90 leading-relaxed sm:mb-6">
-              Siap untuk mengabadikan momen berharga Anda? Hubungi kami sekarang untuk konsultasi gratis dan dapatkan penawaran terbaik.
+              Punya kebutuhan foto, video, drone, desain grafis, atau desain web? Ceritakan kebutuhan kamu, kami bantu arahkan paket dan konsep yang paling sesuai.
             </p>
 
             {/* Contact Information */}
@@ -232,9 +225,9 @@ Kami akan segera merespons konsultasi Anda.`
             {/* WhatsApp CTA */}
             <div className="mt-4 pt-4 border-t border-white/20">
               <div className="text-center">
-                <p className="text-white/80 mb-2 text-sm">Atau hubungi langsung via WhatsApp</p>
+                <p className="text-white/80 mb-2 text-sm">WhatsApp: +62 888-0801-7869</p>
                 <a 
-                  href="https://wa.me/6288808017869?text=Halo%20Flaha%20Creative%2C%20mau%20tanya%20untuk%20acara%20dong" 
+                  href="https://wa.me/6288808017869?text=Halo%20Flaha%20Creative%20Production%2C%20aku%20mau%20konsultasi%20untuk%20kebutuhan%20dokumentasi.%20Bisa%20dibantu%3F" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-green-500 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 text-sm" 

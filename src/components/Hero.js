@@ -11,9 +11,15 @@ export default function Hero() {
   ]
 
   const staticContent = {
-    title: 'Jasa Dokumentasi Profesional',
-    description: 'Layanan terpercaya untuk setiap kebutuhanmu dengan hasil yang terbaik dan berkualitas.'
+    title: 'Abadikan Setiap Momen dengan Hasil Profesional',
+    description:
+      'Flaha Creative Production melayani Fotografi, Videografi, Drone, Desain Grafis, dan Desain Web. Ceritakan kebutuhan kamu, kami bantu wujudkan hasil yang rapi, nyaman, dan siap dipublikasikan.'
   }
+
+  const whatsappNumber = '6288808017869'
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    'Halo Flaha Creative Production, aku mau konsultasi untuk kebutuhan foto/video. Bisa dibantu?'
+  )}`
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isAutoPlay, setIsAutoPlay] = useState(true)
@@ -39,12 +45,8 @@ export default function Hero() {
     }
   }
 
-  // Smooth scroll to about
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about')
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' })
-    }
+  const openWhatsApp = () => {
+    window.open(whatsappURL, '_blank', 'noopener,noreferrer')
   }
 
   return (
@@ -67,15 +69,15 @@ export default function Hero() {
                     Production
                   </h1>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed animate-slideInLeft" style={{animationDelay: '0.2s'}}>
-                    We Capture Every Moment
+                    Abadikan momen berharga dengan layanan kreatif yang siap mendukung kebutuhan kamu.
                   </p>
                 </div>
                 <div className="animate-slideInLeft" style={{animationDelay: '0.3s'}}>
                   <button 
-                    onClick={scrollToAbout}
-                    className="bg-[#103641] hover:bg-[#1a5a6b] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold transition-all duration-300 border border-[#103641] hover:border-[#1a5a6b] inline-block text-xs sm:text-sm md:text-base hover:scale-105 hover:shadow-lg transform"
+                    onClick={openWhatsApp}
+                    className="bg-[#103641] hover:bg-[#1a5a6b] text-white px-4 py-2.5 sm:px-6 sm:py-3 rounded-lg font-semibold transition-all duration-300 border border-[#103641] hover:border-[#1a5a6b] inline-block text-sm md:text-base hover:scale-105 hover:shadow-lg transform"
                   >
-                    Pelajari Lebih Lanjut
+                    Konsultasi via WhatsApp
                   </button>
                 </div>
               </div>
@@ -84,11 +86,11 @@ export default function Hero() {
               <div className="text-gray-800 flex flex-col justify-center space-y-3 sm:space-y-4 text-center lg:text-left animate-fadeInUp" style={{animationDelay: '0.2s'}}>
                 <div>
                   <div className="space-y-2 sm:space-y-3 text-gray-600 leading-relaxed">
-                    <p className="text-xs sm:text-sm md:text-base">
-                      Semua kebutuhanmu bisa terpenuhi di Flaha Creative Production. Kami hadir dengan layanan lengkap Foto, Video, Drone, Desain Grafis, hingga Desain Web untuk setiap kebutuhanmu.
+                    <p className="text-sm md:text-base">
+                      Abadikan setiap momen berharga bersama Flaha Creative Production. Kami melayani Fotografi, Videografi, Drone, Desain Grafis, dan Desain Web untuk kebutuhan acara, bisnis, UMKM, hingga personal brand kamu.
                     </p>
-                    <p className="text-xs sm:text-sm md:text-base font-bold">
-                      Kenangan indah berawal dari memilih vendor dokumentasi yang tepat. <br className="hidden sm:block" />Flaha Creative siap jadi bagian dari ceritamu.
+                    <p className="text-sm md:text-base font-bold">
+                      Kamu fokus menikmati momennya, kami urus prosesnya sampai hasilnya siap kamu banggakan. <br className="hidden sm:block" />Flaha Creative siap jadi bagian dari cerita kamu.
                     </p>
                   </div>
                 </div>
@@ -136,10 +138,10 @@ export default function Hero() {
 
                 <button 
                   onClick={scrollToPortfolio}
-                  className="px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 bg-white/95 hover:bg-white backdrop-blur-sm rounded-full text-black font-semibold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl transition-all duration-300 hover:scale-105 shadow-2xl animate-slideUp hover:shadow-white/20"
+                  className="px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 bg-white/95 hover:bg-white backdrop-blur-sm rounded-full text-black font-semibold text-sm md:text-base lg:text-lg xl:text-xl transition-all duration-300 hover:scale-105 shadow-2xl animate-slideUp hover:shadow-white/20"
                   style={{animationDelay: '0.2s'}}
                 >
-                  Lihat Portfolio
+                  Lihat Portofolio
                 </button>
               </div>
             </div>
@@ -155,7 +157,7 @@ export default function Hero() {
                       ? 'bg-white w-6 sm:w-8 md:w-10 lg:w-12 h-1 sm:h-1.5 md:h-2 shadow-md' 
                       : 'bg-white/50 hover:bg-white/75 w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-2.5 md:h-2.5 hover:scale-110'
                   }`}
-                  aria-label={`Go to slide ${index + 1}`}
+                  aria-label={`Buka slide ${index + 1}`}
                 />
               ))}
             </div>

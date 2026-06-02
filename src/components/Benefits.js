@@ -14,8 +14,8 @@ export default function Benefits() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      title: "Semua Kebutuhan Dokumentasi Ada di Flaha Creative",
-      description: "Bersama Flaha Creative, kamu bisa tenang karena semua ditangani oleh tim yang berpengalaman. Kami mendampingi kamu dari awal, saat sesi foto, sampai proses setelahnya—semuanya terkoordinasi dengan rapi."
+      title: "Tim Kreatif dan Komunikatif",
+      description: "Kamu bisa berdiskusi dari awal agar konsep dan kebutuhan kamu jelas. Tim kami responsif, terbuka untuk masukan, dan menjaga komunikasi tetap nyaman."
     },
     {
       id: 2,
@@ -24,8 +24,8 @@ export default function Benefits() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      title: "Service yang Berbeda (Ramah, Terarah, & Profesional)",
-      description: "Yang bikin banyak klien nyaman dan kembali lagi bersama Flaha bukan karena hanya hasil fotonya saja. Tapi cara kami mendampingi mereka sepanjang proses. 99% klien puas bukan cuma karena hasil foto, tapi karena arahannya jelas, fotografernya ramah, dan attitudenya sopan."
+      title: "Hasil Rapi dan Profesional",
+      description: "Kami fokus pada detail, komposisi, dan konsistensi visual. Hasil akhir dibuat rapi dan siap digunakan untuk kebutuhan dokumentasi maupun konten."
     },
     {
       id: 3,
@@ -34,8 +34,8 @@ export default function Benefits() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
       ),
-      title: "Momen Hari ini, Langsung Bisa Kamu Bagikan",
-      description: "Flaha creative dilengkapi dengan layanan Same Day Edited file (SDE), supaya kamu bisa langsung berbagi kebahagiaan di hari yang sama tanpa harus menunggu. Sameday edited file dari Flaha bikin kamu bisa langsung update story tanpa perlu menunggu lama."
+      title: "Proses Mudah dan Fleksibel",
+      description: "Alur kerja dibuat jelas dan sederhana, mulai dari briefing sampai delivery. Jadwal dan kebutuhan teknis bisa disesuaikan dengan kondisi acara atau project kamu."
     },
     {
       id: 4,
@@ -44,8 +44,8 @@ export default function Benefits() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      title: "Pembayaran Mudah, Proses Aman",
-      description: "Kami menyediakan alur pembayaran yang praktis dan jelas di awal. Tidak ada biaya tersembunyi atau perubahan mendadak. Setelah payment, tim Flaha langsung bantu susun konsep, moodboard, dan arahan yang kamu butuhkan dengan alur kerja yang rapi."
+      title: "Cocok untuk Acara dan Kebutuhan Bisnis",
+      description: "Mulai dari acara keluarga, event, sampai kebutuhan brand. Layanan kami relevan untuk bisnis, UMKM, dan personal brand yang ingin tampil lebih rapi di berbagai channel."
     },
     {
       id: 5,
@@ -54,8 +54,8 @@ export default function Benefits() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
       ),
-      title: "Satu Vendor untuk Semua Momenmu",
-      description: "Flaha juga menyediakan dokumentasi all-in mulai dari Event, Wisuda, lamaran, prewedding, sampai wedding. Jadi kamu gak perlu khawatir soal vendor dokumentasi—cukup dengan 1 vendor, nikmati momennya dan biarkan kami mengabadikan dengan cara yang natural dan penuh cerita."
+      title: "Layanan Lengkap untuk Kebutuhan Visual",
+      description: "Kamu bisa menggabungkan kebutuhan foto, video, drone, desain grafis, dan desain web dalam satu alur yang selaras, supaya hasilnya tetap konsisten."
     },
     {
       id: 6,
@@ -64,8 +64,8 @@ export default function Benefits() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       ),
-      title: "Konsultasi Gratis Sebelum Booking",
-      description: "Sebelum booking, kamu bisa ngobrol dulu sama admin Flaha. Biar semuanya jelas—mulai dari konsep foto, jadwal, sampai detail teknis. Flaha siap bantu kasih gambaran yang lengkap dan rapi, supaya kerja sama bisa berjalan nyaman dan profesional."
+      title: "Koordinasi Jelas dari Awal",
+      description: "Kami bantu merapikan kebutuhan kamu—mulai dari konsep, jadwal, sampai deliverable—agar prosesnya terarah dan minim miskomunikasi."
     },
     {
       id: 7,
@@ -74,8 +74,8 @@ export default function Benefits() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
         </svg>
       ),
-      title: "Saatnya Tentukan Vendor Terbaikmu",
-      description: "Pemilihan vendor bukan hanya soal harga dan layanan—tapi tentang rasa, emosi dan cerita yang akan kamu dapatkan. Ambil waktu untuk mempertimbangkan dengan tenang, agar tidak salah pilih dan menyesal saat momen berharga terlewat begitu saja."
+      title: "Pendekatan yang Natural dan Nyaman",
+      description: "Kami membantu mengarahkan seperlunya tanpa membuat suasana kaku. Kamu bisa tetap nyaman, dan momen yang terekam terasa lebih natural."
     }
   ];
 
@@ -123,7 +123,7 @@ export default function Benefits() {
           </h2>
           <div className="w-20 h-1 bg-[#103641] mx-auto mb-6"></div>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Kami memberikan nilai lebih dalam setiap layanan fotografi dengan keunggulan yang membedakan kami dari yang lain
+            Alasan memilih Flaha Creative Production untuk dokumentasi dan kebutuhan visual kamu, dengan proses yang jelas dan hasil yang rapi.
           </p>
         </div>
 
@@ -231,7 +231,7 @@ export default function Benefits() {
         {/* CTA Button */}
         <div className="text-center mt-12 lg:mt-16">
           <p className="text-sm lg:text-base text-gray-600 mb-4 lg:mb-6">
-            Siap untuk mengabadikan momen berharga Anda?
+            Siap mulai diskusi untuk kebutuhan kamu?
           </p>
           <a 
             href="#contact" 

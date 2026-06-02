@@ -296,16 +296,16 @@ export default function Portofolio() {
   const filteredItems = getFilteredItems()
 
   return (
-    <section id="portfolio" className="min-h-[92vh] scroll-mt-[8vh] flex items-center bg-gray-50 py-6 lg:py-8">
+    <section id="portfolio" className="min-h-[92vh] scroll-mt-[8vh] flex items-center bg-gray-50 py-8 lg:py-8">
       <div className="max-w-7xl mx-auto px-4 w-full h-full">
         {/* Header Section - Mobile Optimized */}
-        <div className="text-center mb-6 lg:mb-16">
+        <div className="text-center mb-8 lg:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 lg:mb-4 leading-tight">
-            <span className="block text-[#103641]">Portfolio Kami</span>
+            <span className="block text-[#103641]">Portofolio Kami</span>
           </h2>
           <div className="w-16 lg:w-24 h-1 bg-[#103641] mx-auto mb-3 lg:mb-4"></div>
-          <p className="text-xs sm:text-sm lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Lihat koleksi karya terbaik kami yang menampilkan berbagai momen berharga
+          <p className="text-sm lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
+            Beberapa hasil karya dan dokumentasi yang pernah kami kerjakan untuk berbagai kebutuhan acara, bisnis, dan konten kreatif.
           </p>
 
           {/* Category Filter - Mobile Optimized */}
@@ -314,7 +314,7 @@ export default function Portofolio() {
               <button
                 key={category.id}
                 onClick={() => setActiveFilter(category.id)}
-                className={`px-3 py-1.5 lg:px-4 lg:py-2 rounded-full border-2 border-teal-800 font-semibold transition-all duration-300 transform hover:scale-105 text-[11px] sm:text-xs lg:text-base ${
+                className={`px-3 py-2 lg:px-4 lg:py-2 rounded-full border-2 border-teal-800 font-semibold transition-all duration-300 transform hover:scale-105 text-sm lg:text-base ${
                   activeFilter === category.id 
                     ? 'bg-teal-800 text-white' 
                     : 'text-teal-800 hover:bg-teal-800 hover:text-white'
@@ -344,7 +344,11 @@ export default function Portofolio() {
                   <SwiperSlide key={slide.id}>
                     <div className="relative w-full h-full">
                       {/* Fallback for Image component in development */}
-                      <div className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-300 flex items-center justify-center">
+                      <div
+                        className="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-300 flex items-center justify-center"
+                        role="img"
+                        aria-label={`Gambar portofolio: ${slide.title}`}
+                      >
                         <div className="text-center text-gray-500 px-4">
                           <svg className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 mx-auto mb-2 lg:mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -357,7 +361,7 @@ export default function Portofolio() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
                         <div className="p-3 sm:p-4 lg:p-6 text-white w-full mb-8 sm:mb-10">
                           <h3 className="text-base sm:text-lg lg:text-2xl font-bold mb-1 lg:mb-2">{slide.title}</h3>
-                          <p className="text-xs sm:text-sm opacity-90">{slide.description}</p>
+                          <p className="text-sm sm:text-sm opacity-90">{slide.description}</p>
                         </div>
                       </div>
                     </div>
@@ -421,12 +425,16 @@ export default function Portofolio() {
                   {/* Image Container */}
                   <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 relative overflow-hidden">
                     {/* Fallback for Image component in development */}
-                    <div className="absolute inset-0 flex items-center justify-center">
+                    <div
+                      className="absolute inset-0 flex items-center justify-center"
+                      role="img"
+                      aria-label={`Gambar portofolio ${item.category}: ${item.title}`}
+                    >
                       <div className="text-center text-gray-500 px-2">
                         <svg className="w-8 h-8 lg:w-12 lg:h-12 mx-auto mb-1 lg:mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
-                        <p className="text-[10px] lg:text-xs font-medium">{item.category}</p>
+                        <p className="text-xs lg:text-xs font-medium">{item.category}</p>
                       </div>
                     </div>
                   </div>
@@ -438,8 +446,8 @@ export default function Portofolio() {
 
         {/* View More Button - Mobile Optimized */}
         <div className="text-center mt-4 lg:mt-6">
-          <button className="bg-gradient-to-r from-teal-700 to-teal-900 text-white px-4 py-2 lg:px-5 lg:py-2 rounded-lg font-semibold text-xs sm:text-sm lg:text-xl hover:from-teal-800 hover:to-teal-950 transition-all duration-300 transform hover:scale-105 shadow-lg">
-            Lihat Portfolio Lengkap
+          <button className="bg-gradient-to-r from-teal-700 to-teal-900 text-white px-4 py-2.5 lg:px-5 lg:py-2 rounded-lg font-semibold text-sm lg:text-xl hover:from-teal-800 hover:to-teal-950 transition-all duration-300 transform hover:scale-105 shadow-lg">
+            Lihat Portofolio Lengkap
           </button>
         </div>
       </div>

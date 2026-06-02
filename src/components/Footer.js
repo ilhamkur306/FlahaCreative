@@ -17,23 +17,32 @@ export default function Footer() {
           
           {/* Logo & Description - Left */}
           <div className="text-center sm:text-left">
-            <h3 className="text-xl sm:text-2xl font-bold mb-2">Flaha Creative</h3>
+            <h3 className="text-xl sm:text-2xl font-bold mb-2">Flaha Creative Production</h3>
             <p className="text-sm text-white/70">
-              We Capture Every Moment
+              Foto, Video, Drone, Desain Grafis & Web
             </p>
           </div>
 
           {/* Empty Center Column - Hidden on mobile */}
-          <div className="hidden lg:block"></div>
+          <div className="text-center">
+            <nav className="inline-flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-white/80">
+              <a href="#hero" className="hover:text-white transition-colors">Beranda</a>
+              <a href="#about" className="hover:text-white transition-colors">Tentang</a>
+              <a href="#portfolio" className="hover:text-white transition-colors">Portofolio</a>
+              <a href="#services" className="hover:text-white transition-colors">Layanan</a>
+              <a href="#pricing" className="hover:text-white transition-colors">Paket Harga</a>
+              <a href="#contact" className="hover:text-white transition-colors">Kontak</a>
+            </nav>
+          </div>
 
           {/* Back to Top - Right */}
           <div className="text-center sm:text-right">
             <button
               onClick={scrollToTop}
               className="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 text-sm sm:text-base"
-              aria-label="Scroll to top"
+              aria-label="Kembali ke atas"
             >
-              <span>Back to Top</span>
+              <span>Kembali ke Atas</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
               </svg>
@@ -43,7 +52,7 @@ export default function Footer() {
         
         {/* Copyright - Bottom */}
         <div className="text-center mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-white/20">
-          <p className="text-white/70 text-sm">&copy; {currentYear} Flaha Creative. All rights reserved.</p>
+          <p className="text-white/70 text-sm">&copy; {currentYear} Flaha Creative Production. All rights reserved.</p>
         </div>
       </div>
     </footer>

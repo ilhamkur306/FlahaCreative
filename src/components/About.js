@@ -15,10 +15,10 @@ export default function About() {
             
             <div className="space-y-3 lg:space-y-6">
               <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
-                Sejak 2019, Flaha Creative telah tumbuh menjadi partner terpercaya dalam layanan Foto, Video, dan Desain Grafis. Kami hadir untuk mengabadikan berbagai momen penting dengan  layanan terpercaya, hasil yang eksklusif dan berkesan.
+                Flaha Creative Production adalah jasa kreatif untuk dokumentasi dan kebutuhan visual. Kami membantu kamu menyiapkan konten yang rapi dan sesuai karakter brand, untuk berbagai kebutuhan acara maupun bisnis.
               </p>
               <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
-                Karena hasil dan pelayanan yang memuaskan, banyak klien kami mempercayakan kembali momen  berikutnya kepada Flaha Creative. Sekali mencoba, kamu akan paham kenapa mereka tetap bersama kami.
+                Layanan utama kami mencakup foto, video, drone, desain grafis, dan desain web. Kami bekerja dengan proses yang jelas, komunikasi yang nyaman, dan fokus pada hasil yang relevan untuk kebutuhan kamu.
               </p>
             </div>
 

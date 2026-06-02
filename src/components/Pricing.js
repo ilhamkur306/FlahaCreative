@@ -2,59 +2,59 @@ export default function Pricing() {
   const pricingPlans = [
     {
       id: 1,
-      name: 'Basic Package',
-      price: 'Rp 2.500.000',
-      duration: 'per event',
-      description: 'Paket dasar untuk dokumentasi acara kecil',
+      name: 'Paket Basic',
+      price: 'Mulai dari Rp 2.500.000 per event',
+      duration: '',
+      description: 'Pilihan praktis untuk dokumentasi acara skala kecil dengan kebutuhan yang esensial.',
       features: [
-        '4 jam sesi foto',
-        '100 foto edited',
+        'Durasi dokumentasi hingga 4 jam',
+        '100 foto terkurasi & diedit',
         '1 fotografer',
-        'Online gallery',
-        'USB flashdisk'
+        'Galeri online',
+        'File digital'
       ],
       popular: false,
-      buttonText: 'Pilih Paket',
+      buttonText: 'Konsultasi Paket',
       color: 'from-gray-600 to-gray-700'
     },
     {
       id: 2,
-      name: 'Premium Package',
-      price: 'Rp 4.500.000',
-      duration: 'per event',
-      description: 'Paket lengkap untuk acara spesial Anda',
+      name: 'Paket Premium',
+      price: 'Mulai dari Rp 4.500.000 per event',
+      duration: '',
+      description: 'Untuk acara spesial dengan cakupan lebih lengkap dan variasi dokumentasi yang lebih banyak.',
       features: [
-        '8 jam sesi foto',
-        '300 foto edited',
+        'Durasi dokumentasi hingga 8 jam',
+        '300 foto terkurasi & diedit',
         '2 fotografer',
-        'Online gallery',
-        'USB flashdisk',
+        'Galeri online',
+        'File digital',
         'Cetak foto 20x30 (10 pcs)',
         'Video highlight'
       ],
       popular: true,
-      buttonText: 'Pilih Paket',
+      buttonText: 'Pesan Sekarang',
       color: 'from-[#103641] to-[#1a5a6b]'
     },
     {
       id: 3,
-      name: 'Platinum Package',
-      price: 'Rp 7.500.000',
-      duration: 'per event',
-      description: 'Paket premium dengan layanan terlengkap',
+      name: 'Paket Platinum',
+      price: 'Mulai dari Rp 7.500.000 per event',
+      duration: '',
+      description: 'Cakupan maksimal untuk kebutuhan dokumentasi lengkap, cocok untuk acara besar dan kebutuhan konten.',
       features: [
         'Full day coverage',
-        '500+ foto edited',
-        '3 fotografer + videographer',
-        'Online gallery',
-        'USB flashdisk',
+        '500+ foto terkurasi & diedit',
+        'Tim foto + video',
+        'Galeri online',
+        'File digital',
         'Cetak foto 20x30 (20 pcs)',
         'Video cinematic',
         'Album premium',
-        'Drone photography'
+        'Dokumentasi drone'
       ],
       popular: false,
-      buttonText: 'Pilih Paket',
+      buttonText: 'Konsultasi Paket',
       color: 'from-amber-600 to-amber-700'
     }
   ]
@@ -68,7 +68,7 @@ export default function Pricing() {
             <span className="block text-[#103641]">Paket Harga</span>
           </h2>
           <div className="w-16 lg:w-20 h-1 bg-[#103641] mx-auto mb-3 lg:mb-4"></div>
-          <p className="text-xs sm:text-sm lg:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
+          <p className="text-sm lg:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
             Pilih paket yang sesuai dengan kebutuhan dan budget Anda. Semua paket sudah termasuk konsultasi gratis.
           </p>
         </div>
@@ -91,10 +91,12 @@ export default function Pricing() {
                 <div className={`bg-gradient-to-r ${plan.color} text-white p-3 lg:p-4 rounded-t-lg lg:rounded-t-xl`}>
                   <h3 className="text-base lg:text-lg font-bold mb-1 lg:mb-2">{plan.name}</h3>
                   <div className="mb-1 lg:mb-2">
-                    <span className="text-lg sm:text-xl lg:text-2xl font-bold">{plan.price}</span>
-                    <span className="text-[10px] lg:text-xs opacity-80">/{plan.duration}</span>
+                    <span className="block text-base sm:text-lg lg:text-xl font-bold leading-snug">{plan.price}</span>
+                    {plan.duration ? (
+                      <span className="text-[10px] lg:text-xs opacity-80">/{plan.duration}</span>
+                    ) : null}
                   </div>
-                  <p className="text-[10px] lg:text-xs opacity-90">{plan.description}</p>
+                  <p className="text-sm lg:text-xs opacity-90">{plan.description}</p>
                 </div>
 
                 {/* Features - Mobile Optimized */}
@@ -105,13 +107,13 @@ export default function Pricing() {
                         <svg className="w-3 h-3 lg:w-3.5 lg:h-3.5 text-green-500 mr-1.5 lg:mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        <span className="text-[11px] lg:text-xs text-gray-700">{feature}</span>
+                        <span className="text-sm lg:text-xs text-gray-700">{feature}</span>
                       </li>
                     ))}
                   </ul>
 
                   {/* CTA Button - Mobile Optimized */}
-                  <button className={`w-full py-2 lg:py-2.5 px-3 lg:px-4 rounded-lg font-bold text-[11px] lg:text-xs transition-all duration-300 transform hover:scale-105 ${
+                  <button className={`w-full py-2.5 lg:py-2.5 px-3 lg:px-4 rounded-lg font-bold text-sm lg:text-xs transition-all duration-300 transform hover:scale-105 ${
                     plan.popular 
                       ? 'bg-gradient-to-r from-[#103641] to-[#1a5a6b] text-white hover:from-[#0d2d36] hover:to-[#154d5c] shadow-lg' 
                       : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
@@ -126,11 +128,11 @@ export default function Pricing() {
 
         {/* Bottom CTA - Mobile Optimized */}
         <div className="text-center">
-          <p className="text-gray-600 mb-2 lg:mb-3 text-[11px] sm:text-xs px-4">
-            Butuh paket khusus? Hubungi kami untuk konsultasi gratis dan penawaran yang disesuaikan dengan kebutuhan Anda.
+          <p className="text-gray-600 mb-2 lg:mb-3 text-sm px-4">
+            Butuh paket khusus? Hubungi kami untuk konsultasi dan penawaran yang disesuaikan dengan kebutuhan kamu.
           </p>
-          <button className="bg-gradient-to-r from-[#103641] to-[#1a5a6b] text-white px-4 py-2 lg:px-5 lg:py-2.5 rounded-lg font-semibold text-[11px] sm:text-xs hover:from-[#0d2d36] hover:to-[#154d5c] transition-all duration-300 transform hover:scale-105 shadow-lg">
-            Konsultasi Gratis
+          <button className="bg-gradient-to-r from-[#103641] to-[#1a5a6b] text-white px-4 py-2.5 lg:px-5 lg:py-2.5 rounded-lg font-semibold text-sm hover:from-[#0d2d36] hover:to-[#154d5c] transition-all duration-300 transform hover:scale-105 shadow-lg">
+            Konsultasi Paket
           </button>
         </div>
       </div>

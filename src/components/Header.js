@@ -87,11 +87,11 @@ export default function Header() {
           <div className="flex items-center">
             <a href="#hero" onClick={(e) => handleNavClick(e, '#hero')} className="flex items-center group">
               <div className={`relative transition-all duration-300 ${
-                scrolled ? 'w-48 h-48' : 'w-64 h-64'
+                scrolled ? 'w-40 h-40 sm:w-48 sm:h-48' : 'w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64'
               }`}>
                 <Image
                   src="/assets/images/logo/nobg-white.png"
-                  alt="Flaha Creative Logo"
+                  alt="Logo Flaha Creative"
                   fill
                   className="object-contain group-hover:scale-110 transition-transform duration-300"
                   priority
@@ -101,7 +101,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation - Positioned Right with active indicator */}
-          <div className="hidden md:flex">
+          <div className="hidden lg:flex">
             <div className="flex items-center space-x-2 lg:space-x-4">
               {menuItems.map((item) => {
                 const sectionId = item.href.replace('#', '')
@@ -129,13 +129,15 @@ export default function Header() {
           </div>
 
           {/* Mobile menu button - Positioned Right */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-[#fefefe] hover:text-white hover:bg-white/20 inline-flex items-center justify-center p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white/50 transition-all duration-300"
-              aria-label="Toggle menu"
+              aria-label={isOpen ? 'Tutup menu' : 'Buka menu'}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{isOpen ? 'Tutup menu utama' : 'Buka menu utama'}</span>
               <div className="w-7 h-7 relative flex items-center justify-center">
                 <span className={`absolute h-0.5 w-7 bg-current transform transition-all duration-300 ${
                   isOpen ? 'rotate-45' : '-translate-y-2.5'
@@ -153,7 +155,8 @@ export default function Header() {
 
         {/* Mobile Navigation Menu with slide animation */}
         <div 
-          className={`md:hidden absolute top-full left-0 right-0 w-full bg-gradient-to-r from-[#103641]/98 via-[#3f8aa9]/98 to-[#3f8aa9]/98 backdrop-blur-md overflow-hidden transition-all duration-300 ${
+          id="mobile-menu"
+          className={`lg:hidden absolute top-full left-0 right-0 w-full bg-gradient-to-r from-[#103641]/98 via-[#3f8aa9]/98 to-[#3f8aa9]/98 backdrop-blur-md overflow-hidden transition-all duration-300 ${
             isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
